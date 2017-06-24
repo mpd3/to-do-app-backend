@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+h1 {
+    background-color:#1CFEC9;
+    display: inline-block;
+    vertical-align: text-top;
+    box-shadow: 14.5px 14.5px 35px #1CFEC9;
+    border-radius: 25px;
+} 
+h1:hover {
+    color:blue;
+}
+li {
+    color:red;
+    font: 15px arial, sans-serif;
+}
+li:hover {
+    font-size: 148%;
+    box-shadow: 14.5px 14.5px 35px #000080;
+}
+.pomodoros {
+    color:blue;
+    font: 15px arial, sans-serif;
+}
+.codenow-logo {
+    height: 80px;
+        vertical-align: text-top;
+}
+body {
+    background-color:#D8CE8E;
+    margin: 5%;
+}
+ol {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 14.5px 14.5px 35px #888888;
+}
+
+ .line-through{
+    text-decoration: line-through;
+ }
