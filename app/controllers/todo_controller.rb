@@ -11,7 +11,7 @@ class TodoController < ApplicationController
 
         elsif @id == '2'
             puts "hi"
-            @todo_description = "CLean my room"
+            @todo_description = "Clean my room"
             @pomodoros = "3"
         else
             puts "bye"
