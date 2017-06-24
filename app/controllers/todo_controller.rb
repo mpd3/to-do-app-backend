@@ -5,5 +5,6 @@ class TodoController < ApplicationController
     def show
         @todo_description = "Walk the dog"
         @pomodoros = "4"
+        @id = params[:id]
     end
 end
