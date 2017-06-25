@@ -53,7 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  get 'todo/index', to: 'todo#index'
+  root to: 'todo#index'
   get 'todo/new', to: 'todo#new'
   get 'todo/create', to: 'todo#create'
   get 'todo/show/:id', to: 'todo#show'
