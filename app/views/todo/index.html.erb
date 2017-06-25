@@ -2,22 +2,16 @@
         <img class="codenow-logo" src="https://westgarth.files.wordpress.com/2015/02/codenow-logo.png" title="CodeNow logo">
         
         <ol> 
+        <% @todos.each do |todo| %>
             <li>
-                 <input type="checkbox"> <a href="show/1">Walk the dog</a>
-                <span class="pomodoros"> 4 Pomodoros</span>
+                <input type="checkbox"> <a href="/todo/show/<%=todo.id%>"> <%=todo.description%> </a>
+                <span class="pomodoros"> <p><%=todo.pomodoro_estimate%> </p> </span>
+                
                 
             </li>
-            <li> 
-                <input type="checkbox"> <a href="show/2"> Clean my room</a>
-                <span class="pomodoros"> 3 Pomodoros</span>
-            </li>
-            <li> 
-                <input type="checkbox"> <a href="show/3"> Eat </a>
-                <span class="pomodoros"> 1 Pomodoros</span>
-            </li>
+        <% end %>
             
         </ol>
         
        <a href="new"> Add a todo</a>
         
-        <%=@math%> 

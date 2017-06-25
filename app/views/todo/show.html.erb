@@ -1,15 +1,13 @@
 <h1> id <%=@todo.id%> </h1>
 <h1> <%=@todo.description%> </h1>
+<h1> <%=@todo.pomodoro_estimate %></h1>
 <br></br>
-<input type="submit" value="Edit" class="box-one">
-<input type="submit" value="Delete" class="box-two"> 
 <a href="/todo/index">Go home!</a>
 <br></br>
-<div class="card">
-  <img src="https://image.shutterstock.com/z/stock-vector-kid-walking-dog-vector-illustration-all-in-a-single-layer-96625480.jpg" alt="Avatar" style="width:30%">
   <div class="container">
-    <h4><b>Mike D'Antonio</b></h4> 
-    <p>Dog walker</p> 
-    <a href="/todo/edit/<%= @todo.id%>"> Edit </a>
+    <a href="/todo/edit/<%= @todo.id%>"> <input type="submit" value="Edit" class="box-one"/></a>
+    <br/>
+    <a href="/todo/destroy/<%= @todo.id%>"> <input type="submit" value="Delete" class="box-two"/></a>
+
   </div>
 </div>
